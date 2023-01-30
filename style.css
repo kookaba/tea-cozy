@@ -4,14 +4,17 @@ html * {
     color: seashell;
     background-color: black;
     opacity: 0.9;
-
+    text-align: center;
 }
 
 body,
 header,
 header ul,
 .main-container,
-.mission {
+.mission,
+.tea-of-month,
+.tea-container,
+.tea-box {
     display: flex;
 }
 
@@ -56,6 +59,7 @@ main {
 .main-container {
     flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
 }
 
 .mission {
@@ -74,4 +78,31 @@ main {
 
 .mission-text h2 {
     font-size: 30px;
+}
+
+.tea-of-month {
+    flex-direction: column;
+}
+
+.tea-container {
+    flex-flow: row wrap;
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tea-box {
+    flex-direction: column;
+    align-items: center;
+}
+
+.tea-box h4 {
+    margin: 0;
+    padding: 10px;
+}
+
+.tea-box img {
+    height: 200px;
+    width: 300px;
 }
