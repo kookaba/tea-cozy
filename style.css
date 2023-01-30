@@ -7,14 +7,16 @@ html * {
     text-align: center;
 }
 
-body,
 header,
 header ul,
 .main-container,
 .mission,
 .tea-of-month,
 .tea-container,
-.tea-box {
+.tea-box,
+.locations,
+.location-container,
+.location-box {
     display: flex;
 }
 
@@ -33,6 +35,10 @@ header {
     background-color: black;
     border-bottom: 1px solid seashell;
     z-index: 2;
+}
+
+h5 {
+    font-size: 18px;
 }
 
 header img {
@@ -105,4 +111,45 @@ main {
 .tea-box img {
     height: 200px;
     width: 300px;
+}
+
+.locations {
+    flex-flow: column nowrap;
+    background: url(./images/img-locations-background.jpg);
+    height: 500px;
+    width: 1200px;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations h2 {
+    background-color: transparent;
+}
+
+.location-container {
+    flex-flow: row wrap;
+    gap: 40px;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-box {
+    flex-flow: column nowrap;
+    height: 300px;
+    width: 300px;
+    opacity: 1;
+}
+
+.contact h2 {
+    font-size: 36px;
+}
+
+.contact h5 {
+    font-size: 18px;
+}
+
+footer {
+    border: 1px solid red;
 }
