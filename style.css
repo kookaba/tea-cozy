@@ -23,7 +23,6 @@ header ul,
 body {
     margin: 0;
     flex-direction: column;
-    align-items: center;
 }
 
 header {
@@ -38,7 +37,7 @@ header {
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 header img {
@@ -57,7 +56,6 @@ header ul li {
 }
 
 main {
-    margin-top: 70px;
     background-color: black;
     z-index: 1;
 }
@@ -151,5 +149,10 @@ main {
 }
 
 footer {
-    border: 1px solid red;
+    margin-left: 20px;
 }
+
+footer h5 {
+    text-align: left;
+}
+
